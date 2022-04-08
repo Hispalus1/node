@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        form{
+            display: none;
+        }
+    </style>
+        
+</head>
+
+<body>
+    <h1>Snake</h1>
+    <h2>pravidla</h2>
+    <ul>
+        <li>jablko(červené) + 1 bod</li>
+        <li>koláč(hnědý) - 1 bod</li>
+        <li>konec hry = náraz do zdi nebo do svého těla</li>
+    </ul>
+
+    
+    <canvas id="game" width="400" height="400"></canvas>
+        <form class="submission-form" action="/save" method="post">
+            <section><label for="player"><input name="player" type="text" placeholder="UwU"></label></section>
+            <section><label for="points"><input name="points" type="number" id="points" readonly></label></section>
+            <button type="submit" id="sendBtn">SEND</button>
+        </form>
+    <script src="index.js"></script>
+</body>
+</html>

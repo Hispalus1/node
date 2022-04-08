@@ -1,0 +1,30 @@
+doctype html
+html  
+    head
+        link(rel='stylesheet' href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
+        title Výsledy hry
+        style  
+    body 
+        header.jumbotron
+            h1.text-center #{nadpis}
+        main.container 
+        table(class="table table-striped")
+            thead
+                tr 
+                    th Jmeno hrace
+                    th počet bodu
+                    th datum 
+                    th cas
+            tbody 
+                each pl in players 
+                    tr
+                        td #{pl.player}
+                        td #{pl.points}
+                        td #{pl.date}
+                        td #{pl.time}
+
+
+        
+                        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+                        script(src='https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js')
+        
